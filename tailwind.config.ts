@@ -19,6 +19,11 @@ export default {
     },
     extend: {
       colors: {
+        airbnb: {
+          primary: "#FF385C",
+          secondary: "#222222",
+          light: "#717171",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
