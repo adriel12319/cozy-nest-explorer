@@ -15,7 +15,7 @@ const SearchForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-3xl bg-white rounded-full shadow-lg p-2">
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="flex flex-col md:flex-row items-stretch md:items-center gap-2 md:gap-0">
         <div className="flex-1 w-full md:w-auto p-2">
           <Input
             type="text"
@@ -46,9 +46,10 @@ const SearchForm = () => {
           />
         </div>
         
-        <div className="p-2">
-          <Button type="submit" className="bg-airbnb-primary hover:bg-airbnb-primary/90 text-white rounded-full">
-            <Search className="h-4 w-4" />
+        <div className="p-2 w-full md:w-auto">
+          <Button type="submit" className="w-full md:w-auto bg-airbnb-primary hover:bg-airbnb-primary/90 text-white rounded-full">
+            <Search className="h-4 w-4 md:mr-2" />
+            <span className="hidden md:inline">Search</span>
           </Button>
         </div>
       </div>
